@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+git fetch
+git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)
+git pull
+[ -f ".gitmodules" ] && {
+  git submodule sync --recursive
+  git submodule update --recursive --init
+}
+[ -f ".gitfat" ] && {
+  git fat submodule update --init --recursive
+  git fat pull
+}
+
