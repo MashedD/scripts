@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
+cd $(dirname "$0")
 #./update-blasphemer.sh
 #./update-crispydoom.sh
 #./update-crispyheretic.sh
