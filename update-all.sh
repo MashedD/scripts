@@ -6,7 +6,7 @@ cd $(dirname "$0")
 #./update-crispyheretic.sh
 #./update-crispyhexen.sh
 #./update-dethrace.sh
-./update-ironwail.sh
+#./update-ironwail.sh
 #./update-joequake.sh
 #./update-lastermaul.sh
 #./update-librequake-ironwail.sh
@@ -14,7 +14,7 @@ cd $(dirname "$0")
 #./update-notblood.sh
 ./update-q2pro.sh
 ./update-q2repro.sh
-#./update-vkquake.sh
+./update-vkquake.sh
 
 # Consider:
 #
