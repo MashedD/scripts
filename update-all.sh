@@ -16,6 +16,9 @@ cd $(dirname "$0")
 ./update-q2repro.sh
 ./update-vkquake.sh
 
+cd ~/.local/src/dwm; git pull; make
+cd ~/.local/src/st; git pull; make
+
 # Consider:
 #
 # 3zb2-zigflag
