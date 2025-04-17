@@ -5,5 +5,5 @@ cd $(dirname "$0")
     +set cheats 1 \
     +set fraglimit 10 \
     +exec game.cfg \
-    +set autospawn 4
+    +set autospawn 1
 
