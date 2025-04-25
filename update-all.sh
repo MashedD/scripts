@@ -6,8 +6,8 @@ cd $(dirname "$0")
 #./update-crispyheretic.sh
 #./update-crispyhexen.sh
 #./update-dethrace.sh
-#./update-ironwail.sh
-#./update-joequake.sh
+./update-ironwail.sh
+./update-joequake.sh
 #./update-lastermaul.sh
 #./update-librequake-ironwail.sh
 #./update-librequake.sh
