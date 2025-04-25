@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
-GAME_PATH=${GAME_PATH:-"$HOME/Games/ironwail"}
+GAME_PATH=${GAME_PATH:-"$HOME/Games/quake"}
 cd "$GAME_PATH"
-./ironwail
+./ironwail \
+    +exec ironwail_autoexec.cfg \
+    +exec ironwail_modern.cfg
 
