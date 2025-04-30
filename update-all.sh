@@ -9,11 +9,12 @@ cd $(dirname "$0")
 ./update-ironwail.sh
 ./update-joequake.sh
 #./update-lastermaul.sh
-#./update-librequake-ironwail.sh
+./update-librequake-ironwail.sh
 #./update-librequake.sh
 #./update-notblood.sh
 ./update-q2pro.sh
 ./update-q2repro.sh
+./update-quakespasm.sh
 ./update-vkquake.sh
 
 cd ~/.local/src/dwm; git pull; make
