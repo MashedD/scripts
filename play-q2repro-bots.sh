@@ -10,7 +10,11 @@ cd "$GAME_PATH"
     +exec mashedd-player.cfg \
     +exec mashedd-q2repro.cfg \
     +exec mashedd-q2repro-multi.cfg \
-    +map q2dm1
+    +set game bots \
+    +set cheats 1 \
+    +set fraglimit 10 \
+    +exec game.cfg \
+    +set autospawn 1 \
     $*
 #xrandr --output "$CONNECTED_DISPLAY" --mode "$ORIGINAL_RESOLUTION"
 
