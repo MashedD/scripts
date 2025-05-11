@@ -15,6 +15,7 @@ cd $(dirname "$0")
 ./update-q2pro.sh
 ./update-q2repro.sh
 ./update-quakespasm.sh
+./update-qrustyquake.sh
 ./update-vkquake.sh
 
 cd ~/.local/src/dwm; git pull; make

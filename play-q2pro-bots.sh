@@ -3,7 +3,8 @@ cd $(dirname "$0")
 ./play-q2pro.sh \
     +set game bots \
     +set cheats 1 \
-    +set fraglimit 10 \
+    +set fraglimit 30 \
+    +set timelimit 10 \
     +exec game.cfg \
-    +set autospawn 1
+    +set autospawn 7
 
