@@ -4,5 +4,5 @@ cd $(dirname "$0")
     +exec mashedd-jump.cfg \
     +set game jump \
     +connect localhost:27910 \
-    +map q2dm1
+    +map edge_easy
 
