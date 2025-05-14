@@ -7,9 +7,7 @@ cd "$GAME_PATH"
 #xrandr --output "$CONNECTED_DISPLAY" --mode 640x480
 ./q2pro +set homedir ./ \
     +exec mashedd-common.cfg \
-    +exec mashedd-player.cfg \
     +exec mashedd-q2repro.cfg \
-    +exec mashedd-q2repro-multi.cfg \
     +map q2dm1
     $*
 #xrandr --output "$CONNECTED_DISPLAY" --mode "$ORIGINAL_RESOLUTION"

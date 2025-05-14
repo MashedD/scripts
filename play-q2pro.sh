@@ -6,7 +6,7 @@ cd "$GAME_PATH"
 # Display resolution
 ORIGINAL_RESOLUTION=$(xrandr --current | grep '*' | awk '{print $1}')
 CONNECTED_DISPLAY=$(xrandr | grep ' connected' | awk '{print $1}' | head -n 1)
-xrandr --output "$CONNECTED_DISPLAY" --mode 640x480
+#xrandr --output "$CONNECTED_DISPLAY" --mode 640x480
 # Mouse DPI
 ORIGINAL_DPI=$(ratbagctl G102 dpi get | sed 's/dpi//g')
 ratbagctl G102 dpi set 1000
@@ -17,13 +17,11 @@ xinput disable "$TOUCHPAD_NAME"
 # Start game
 ./q2pro +set homedir ./ \
     +exec mashedd-common.cfg \
-    +exec mashedd-player.cfg \
-    +exec mashedd-q2pro.cfg \
     $*
 
 # Restore touchpad? nah, don't care...
 # Restore mouse DPI
 ratbagctl G102 dpi set ${ORIGINAL_DPI}
 # Restore display resolution
-xrandr --output "$CONNECTED_DISPLAY" --mode "$ORIGINAL_RESOLUTION"
+#xrandr --output "$CONNECTED_DISPLAY" --mode "$ORIGINAL_RESOLUTION"
 
