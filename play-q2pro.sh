@@ -15,7 +15,7 @@ TOUCHPAD_NAME="ELAN0300:00 04F3:3206 Touchpad"
 xinput disable "$TOUCHPAD_NAME"
 
 # Start game
-./q2pro +set homedir ./ \
+./q2pro +set homedir . \
     +exec mashedd-common.cfg \
     $*
 
