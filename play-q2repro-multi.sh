@@ -6,7 +6,6 @@ cd "$GAME_PATH"
 #CONNECTED_DISPLAY=$(xrandr | grep ' connected' | awk '{print $1}' | head -n 1)
 #xrandr --output "$CONNECTED_DISPLAY" --mode 640x480
 ./q2pro +set homedir ./ \
-    +exec mashedd-common.cfg \
     +exec mashedd-q2repro.cfg \
     +map q2dm1
     $*
