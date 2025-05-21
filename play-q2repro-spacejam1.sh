@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-set -Eeuo pipefail
-GAME_PATH=${GAME_PATH:-"$HOME/Games/q2repro/single"}
-cd "$GAME_PATH"
-./q2pro +set homedir ./ \
-    +exec mashedd-q2repro.cfg \
+cd $(dirname "$0")
+#WIDTH=800 HEIGHT=600 \
+./play-q2repro-single.sh \
     +exec mashedd-q2repro-single.cfg \
-    +set game spacejam1 +load quick $*
+    +set game spacejam1 \
+    +load quick
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
-GAME_PATH=${GAME_PATH:-"$HOME/Games/q2pro"}
+GAME_PATH=${GAME_PATH:-"$HOME/Games/q2repro"}
 WIDTH=${WIDTH:-1920}
 HEIGHT=${HEIGHT:-1080}
 REFRESH=${REFRESH:-144}
@@ -13,7 +13,9 @@ xinput disable "$TOUCHPAD_NAME"
 # Start game
 #mangohud \
     gamemoderun gamescope -W $WIDTH -H $HEIGHT -r $REFRESH --force-grab-cursor -f -- \
-        ./q2pro +set homedir . $*
+        ./q2pro +set homedir . \
+            +exec mashedd-q2repro.cfg \
+            $*
 
 # Restore touchpad? nah, don't care...
 
