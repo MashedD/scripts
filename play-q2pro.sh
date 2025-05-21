@@ -18,8 +18,10 @@ TOUCHPAD_NAME="ELAN0300:00 04F3:3206 Touchpad"
 xinput disable "$TOUCHPAD_NAME"
 
 # Start game
-gamescope -W $WIDTH -H $HEIGHT -r $REFRESH --force-grab-cursor -f -- \
-    ./q2pro +set homedir . $*
+#mangohud \
+    gamemoderun \
+        gamescope -W $WIDTH -H $HEIGHT -r $REFRESH --force-grab-cursor -f -- \
+            ./q2pro +set homedir . $*
 
 # Restore touchpad? nah, don't care...
 # Restore mouse DPI
