@@ -5,7 +5,9 @@ WIDTH=${WIDTH:-1920}
 HEIGHT=${HEIGHT:-1080}
 REFRESH=${REFRESH:-144}
 cd "$GAME_PATH"
-gamemoderun \
-    gamescope -W $WIDTH -H $HEIGHT -r $REFRESH --force-grab-cursor -f -- \
-        ./ironwail
+
+EXEC=""
+[ -n "$(command -v gamemoderun 2>/dev/null)" ] && EXEC="$EXEC gamemoderun"
+[ -n "$(command -v gamescope 2>/dev/null)" ] && EXEC="$EXEC gamescope -W $WIDTH -H $HEIGHT -r $REFRESH --force-grab-cursor -f --"
+$EXEC ./ironwail $*
 
