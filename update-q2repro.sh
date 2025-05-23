@@ -15,10 +15,10 @@ mkdir -p "$DEST_PATH/baseq2/single"
 [ -e "$DEST_PATH/q2pro" ] || ln -s "$SOURCE_PATH/builddir/q2pro" "$DEST_PATH"
 [ -e "$DEST_PATH/q2proded" ] || ln -s "$SOURCE_PATH/builddir/q2proded" "$DEST_PATH"
 [ -e "$DEST_PATH/baseq2/gamex86_64.so" ] || ln -s "$SOURCE_PATH/builddir/gamex86_64.so" "$DEST_PATH/baseq2"
-[ -e "$DEST_PATH/single/q2pro" ] || ln -s "$SOURCE_PATH/builddir/q2pro" "$DEST_PATH/single"
-[ -e "$DEST_PATH/single/q2proded" ] || ln -s "$SOURCE_PATH/builddir/q2proded" "$DEST_PATH/single"
-[ -e "$DEST_PATH/single/baseq2/gamex86_64.so" ] || ln -s "$SOURCE_PATH/builddir/gamex86_64.so" "$DEST_PATH/single/baseq2"
-
+DEST_PATH="$HOME/Games/q2repro-sp"
+[ -e "$DEST_PATH/q2pro" ] || ln -s "$SOURCE_PATH/builddir/q2pro" "$DEST_PATH"
+[ -e "$DEST_PATH/q2proded" ] || ln -s "$SOURCE_PATH/builddir/q2proded" "$DEST_PATH"
+[ -e "$DEST_PATH/baseq2/gamex86_64.so" ] || ln -s "$SOURCE_PATH/builddir/gamex86_64.so" "$DEST_PATH/baseq2"
 
 echo "[+] Done"
 
