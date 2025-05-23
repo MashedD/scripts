@@ -7,5 +7,5 @@ cd $(dirname "$0")
     +set fraglimit 30 \
     +set timelimit 10 \
     +exec game.cfg \
-    +set autospawn 4
+    +set autospawn 1
 
