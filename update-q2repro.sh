@@ -11,11 +11,6 @@ git pull
 git submodule update --init --recursive
 meson setup builddir --reconfigure
 meson compile -C builddir
-mkdir -p "$DEST_PATH/baseq2/single"
-[ -e "$DEST_PATH/q2repro" ] || ln -s "$SOURCE_PATH/builddir/q2repro" "$DEST_PATH"
-[ -e "$DEST_PATH/q2reproded" ] || ln -s "$SOURCE_PATH/builddir/q2reproded" "$DEST_PATH"
-[ -e "$DEST_PATH/baseq2/gamex86_64.so" ] || ln -s "$SOURCE_PATH/builddir/gamex86_64.so" "$DEST_PATH/baseq2"
-DEST_PATH="$HOME/Games/q2repro-sp"
 [ -e "$DEST_PATH/q2repro" ] || ln -s "$SOURCE_PATH/builddir/q2repro" "$DEST_PATH"
 [ -e "$DEST_PATH/q2reproded" ] || ln -s "$SOURCE_PATH/builddir/q2reproded" "$DEST_PATH"
 [ -e "$DEST_PATH/baseq2/gamex86_64.so" ] || ln -s "$SOURCE_PATH/builddir/gamex86_64.so" "$DEST_PATH/baseq2"
