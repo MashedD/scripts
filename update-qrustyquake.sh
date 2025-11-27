@@ -8,9 +8,11 @@ DEST_PATH=${DEST_PATH:-"$HOME/Games/quake"}
 [ -e "$SOURCE_PATH" ] || git clone "$REPO_URL" "$SOURCE_PATH"
 cd "$SOURCE_PATH"
 git pull
-make -C "src"
+cmake -B build .
+#make -C build
 mkdir -p "$DEST_PATH"
-[ -e "$DEST_PATH/qrustyquake" ] || ln -s "$SOURCE_PATH/src/qrustyquake" "$DEST_PATH"
+# TODO:
+#[ -e "$DEST_PATH/qrustyquake" ] || ln -s "$SOURCE_PATH/src/qrustyquake" "$DEST_PATH"
 
 echo "[+] Done"
 
